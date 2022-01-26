@@ -37,11 +37,15 @@ $ cd studious-octo-potato
 # Run with 3 parameters
 $ ./presence-check.sh 192.168.0.2 me.log vitasrutek
 ```
+
+#### At first it is necessarily to edit script for add your HTTP API key and chat_id.
+
 * first parameter is IP address of wanted device
  
 * second parameter is file which is flag that defends sending notification for all the time when device is or is not reachable.
 
 * third parameter is name of person shown in Telegram notification
+
 
 To fulltime check is crontab record made
 ```
