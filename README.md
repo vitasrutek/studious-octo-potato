@@ -26,3 +26,25 @@ search for [@jsondumpbot](https://t.me/jsondumpbot) to get chat-id
 ```
 
 ## How to use
+
+```bash
+# Clone this repository
+$ git clone https://github.com/vitasrutek/studious-octo-potato
+
+# Go into the repository
+$ cd studious-octo-potato
+
+# Run with 3 parameters
+$ ./presence-check.sh 192.168.0.2 me.log vitasrutek
+```
+* first parameter is IP address of wanted device
+ 
+* second parameter is file which is flag that defends sending notification for all the time when device is or is not reachable.
+
+* third parameter is name of person shown in Telegram notification
+
+To fulltime check is crontab record made
+```
+crontab -e
+* * * * * studious-octo-potato/presence-check.sh 192.168.0.2 me.log vitasrutek
+```
